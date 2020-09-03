@@ -1,0 +1,9 @@
+<div class="card">
+  <img class="card-img-top" [src]="chiTietPhim.hinhAnh" alt="/" style="height: 340px;">
+  <div class="card-body">
+    <h4 class="card-title">{{chiTietPhim.tenPhim}}
+    </h4>
+    <p class="card-text">Giá: {{chiTietPhim.gia}}</p>
+    <button class="btn btn-primary" (click)="xemChiTietPhim()">Chi Tiết</button>
+  </div>
+</div>

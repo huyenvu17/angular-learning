@@ -1,0 +1,7 @@
+<div>
+  <h4>Danh Sách Ghế Đặt</h4>
+  <p *ngFor="let gheDat of danhSachDat">
+    Ghế: {{gheDat.soGhe}} - Giá: {{gheDat.gia}}
+    <span class="text-danger" (click)="huyGhe(gheDat.soGhe)">[Huỷ]</span>
+  </p>
+</div>

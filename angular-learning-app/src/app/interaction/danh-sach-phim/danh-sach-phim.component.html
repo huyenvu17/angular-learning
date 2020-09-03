@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <h2>Danh Sách Phim</h2>
+  <div class="row">
+    <div *ngFor="let phim of danhSachPhim" class="col-sm-3">
+      <app-phim [chiTietPhim]="phim" (chonPhim)="showChiTiet($event)"></app-phim>
+    </div>
+  </div>
+  <div *ngIf="phimDangChon" class="row">
+    <div class="col-sm-6">
+      <img class="card-img-top" [src]="phimDangChon.hinhAnh" alt="/" style="height: 150px; width: 100px">
+    </div>
+    <div class="col-sm-6">
+      <h4>Tên Phim: {{phimDangChon.tenPhim}}</h4>
+      <p>Giá: {{phimDangChon.gia}}</p>
+    </div>
+  </div>
+</div>
